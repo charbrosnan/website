@@ -1,0 +1,104 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="charspage.css">
+    <script src="myscripts.js"></script>
+</head>
+
+<header>
+    <ul>
+    <li><a href = "home.html">Home</a></li>
+    <li><a href = "projects.html">Projects</a></li>
+    <li><a href = "aboutme.html">About Me</a></li>
+    
+    </ul>
+    
+    <h3>        </h3>
+    
+      <p id="p1">Week 1: Intro to Coding Using Scratch</p>
+      
+<a href="https://scratch.mit.edu/projects/71681080/" target = "_blank">
+<img src="http://i77.photobucket.com/albums/j48/charbrosnan/d3b0cb7e-418e-4f6c-87e7-e2c22d5dda7d_zpsfwglimew.png" alt="PIG" style="width:222px;height:202px;border:0">
+
+    
+<a href="https://scratch.mit.edu/projects/71681166/" target = "_blank">
+<img src="http://i77.photobucket.com/albums/j48/charbrosnan/3728fddc-fa11-4b40-a49d-4d5cee30342b_zpsvgrl6dni.png" alt="Paddle Ball" style="width:222px;height:202px;border:0"> 
+        
+    
+<a href="https://scratch.mit.edu/projects/71681236/" target = "_blank">
+<img src="http://i77.photobucket.com/albums/j48/charbrosnan/f7f32bf4-b1b3-4660-8bf3-d240b82b1385_zpsd2dhgbug.png" alt="Shapes" style="width:222px;height:202px;border:0"> </a>
+    
+    
+            
+    <p id="p2">Week 2: Robotics Using Python</p>
+            
+<img src="http://i77.photobucket.com/albums/j48/charbrosnan/71314840-5798-4f30-b463-e15694408056_zpsuozblsjx.png" alt="Obamicon" style="width:222px;height:202px;border:0"> 
+    
+    
+<img src="http://i77.photobucket.com/albums/j48/charbrosnan/ab235e80-1c8b-4a15-affc-4949c90feba9_zpsg9hoad5y.png" alt="Random Food Generator" style="width:222px;height:202px;border:0"> 
+
+    
+<img src="http://i77.photobucket.com/albums/j48/charbrosnan/9d744e96-cc39-4906-a59e-24dd42cd48ab_zps7bt39xs6.png" alt="Calculator" style="width:222px;height:202px;border:0"> 
+      
+    
+<a href="http://vid77.photobucket.com/albums/j48/charbrosnan/IMG_1846_zpsx3xgflik.mp4" target = "_blank">
+<img src="http://i77.photobucket.com/albums/j48/charbrosnan/b21545de-935d-46cc-9eab-dbbddda5bcd6_zpss7p84qxg.jpg" alt="Robotics" style="width:222px;height:202px;border:0"></a>  
+    
+    
+    
+    <p id="p3">Week 3: Graphics Using Processing JS</p>
+    
+    
+<a href="https://www.khanacademy.org/computer-programming/jackson-pollock-lab/4862221587972096" target = "_blank">
+<img src="http://i77.photobucket.com/albums/j48/charbrosnan/da6c9fb4-6e63-4aa3-96da-3ed730c1ee91_zpsaav9zvyf.png" alt="Jackson Lab" style="width:222px;height:202px;border:0">
+     
+<img src="http://i77.photobucket.com/albums/j48/charbrosnan/91a3742f-3060-4db4-bbfe-ab2a79d95ae6_zpskpwbit8r.png" alt="Fish Tank" style="width:222px;height:202px;border:0">  </a>
+    
+    
+
+    <p id="p4">Week 4: Web Design Using JavaScript, CSS, and HTML</p>
+    
+<img src="http://i77.photobucket.com/albums/j48/charbrosnan/dd118af3-9eb3-41c8-a4a2-f1c180c875ba_zpsn6fvqza2.png" alt="Few of My Favorite Burger Places" style="width:222px;height:202px;border:0">
+    
+    
+    
+    <p id="p4">Week 5: Algorithms and Data Structures</p>
+    
+    <img src="http://i77.photobucket.com/albums/j48/charbrosnan/5a5c1c5c-fc38-4469-b76d-e730b34070c3_zpsqdinhqli.png" alt="Algorithms Research Presentation" style="width:222px;height:202px;border:0">
+    
+    <img src="http://i77.photobucket.com/albums/j48/charbrosnan/03bcf14d-72c2-48e2-9039-cc70e70e962c_zps7dainnuj.png" alt="2048" style="width:222px;height:202px;border:0">
+    
+    <img src="http://i77.photobucket.com/albums/j48/charbrosnan/221b430a-c5c3-4ee2-9ba9-f6fa15393467_zpsiswhodcm.png" alt="Password Hashing" style="width:222px;height:202px;border:0">
+    
+    
+    
+ <div class = "clock">  
+<script type="text/javascript">
+            tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+            tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+            function GetClock(){
+            var d=new Date();
+            var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+            if(nyear<1000) nyear+=1900;
+            var d=new Date();
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+            if(nhour==0){ap=" AM";nhour=12;}
+            else if(nhour<12){ap=" AM";}
+            else if(nhour==12){ap=" PM";}
+            else if(nhour>12){ap=" PM";nhour-=12;}
+
+            if(nmin<=9) nmin="0"+nmin;
+            if(nsec<=9) nsec="0"+nsec;
+
+            document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+            }
+
+            window.onload=function(){
+            GetClock();
+            setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+    </div>
+        
+        </header>

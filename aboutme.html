@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="charspage.css">
+    <script src="myscripts.js"></script>
+</head>
+
+<header>
+    <ul>
+    <li><a href = "home.html">Home</a></li>
+    <li><a href = "projects.html">Projects</a></li>
+
+    <li><a href = "aboutme.html">About Me</a></li>
+    
+    </ul>
+    
+<h6>Hello!</h6>
+    <div class = "bio">HELLO! My name is Charlotte Brosnan, and I am 16 years old. I currently live in Larchmont, NY with my parents, brother, and sister. My sister was actually the one to inspire me to apply for Girls Who Code. She loved what the program stood for and thought I would enjoy coding. I had never coded prior to GWC, but I am an avid lover of all things science and math. However, engineering and coding were new concepts for me! 
+        Participating in this program has taught me so much. Not only did I learn the basic hard skills of coding, but I also learned basic soft skills like developing a strong work ethic, networking, putting yourself out there, public spekaing, communication, self-confidence, and time management. The program has allowed me to meet 19 other amazing girls, learn several langauges, and make my very own website(this one!)! </div>
+    
+<a href="https://www.linkedin.com/pub/charlotte-brosnan/102/551/411" target = "_blank" class= "button")>Connect with me on LinkedIn!</a>
+    
+    <div class = "clock">  
+<script type="text/javascript">
+            tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+            tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+            function GetClock(){
+            var d=new Date();
+            var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+            if(nyear<1000) nyear+=1900;
+            var d=new Date();
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+            if(nhour==0){ap=" AM";nhour=12;}
+            else if(nhour<12){ap=" AM";}
+            else if(nhour==12){ap=" PM";}
+            else if(nhour>12){ap=" PM";nhour-=12;}
+
+            if(nmin<=9) nmin="0"+nmin;
+            if(nsec<=9) nsec="0"+nsec;
+
+            document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+            }
+
+            window.onload=function(){
+            GetClock();
+            setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+    </div>
+    
+        </header>

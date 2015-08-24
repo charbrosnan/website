@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="charspage.css">
+    <script src="myscripts.js"></script>
+</head>
+
+<header>
+    <ul>
+    <li><a href = "home.html">Home</a></li>
+    <li><a href = "projects.html">Projects</a></li>
+    <li><a href = "aboutme.html">About Me</a></li>
+    
+    </ul>
+        </header>
+<body>
+    
+<h1>Charlotte Brosnan</h1>
+    <img class="displayed" src="http://i77.photobucket.com/albums/j48/charbrosnan/0e1adcc5-5007-4013-830d-5c56705734b2_zpszqqayk40.jpg" alt="GWC" style="width:192px;height:172px;border:0"><img class="displayed2" src="http://i77.photobucket.com/albums/j48/charbrosnan/98b70305-93c4-425a-bc30-4d4ff0b95ba2_zpscwtgwpnn.jpg" alt="GWC" style="width:192px;height:172px;border:0">
+    
+<!--    <div class="imageBox">
+    <div class="imageInn">
+        <img src="http://i77.photobucket.com/albums/j48/charbrosnan/web_zpsg2gzxoy1.jpeg" style="width:200px;height:170px;"alt="Default Image">
+    </div>
+    <div class="hoverImg">
+        <img src="http://i77.photobucket.com/albums/j48/charbrosnan/Screen%20Shot%202015-07-29%20at%203.47.16%20PM_zps5k3nzyeq.png"style="width:200px;height:170px;" alt="Profile Image">
+    </div>
+</div>
+-->
+
+    <h2>Girls Who Code NY</h2>
+    
+  <div class = "clock">  
+<script type="text/javascript">
+            tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+            tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+            function GetClock(){
+            var d=new Date();
+            var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+            if(nyear<1000) nyear+=1900;
+            var d=new Date();
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+            if(nhour==0){ap=" AM";nhour=12;}
+            else if(nhour<12){ap=" AM";}
+            else if(nhour==12){ap=" PM";}
+            else if(nhour>12){ap=" PM";nhour-=12;}
+
+            if(nmin<=9) nmin="0"+nmin;
+            if(nsec<=9) nsec="0"+nsec;
+
+            document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+            }
+
+            window.onload=function(){
+            GetClock();
+            setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+    </div>
+</body>
+</html>
